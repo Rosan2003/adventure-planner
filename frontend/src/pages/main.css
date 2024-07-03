@@ -1,0 +1,29 @@
+#vdo{
+    height: 45rem;
+    width: 100%;
+}
+
+.btns{
+    display: flex;
+    column-gap: 10px;
+    padding-left: 80rem;
+}
+
+.btn{
+    cursor: pointer;
+    transition: 
+        scale 0.25s ease-in,
+        opacity 0.25s ease-in,
+        filter 0.25s ease-in;
+    
+    &:hover {
+        scale: 1.2;
+    }
+}
+
+.btns:has(.btn:hover) .btn:not(:hover){
+    scale: 0.8;
+    opacity: 0.8;
+    filter: blur(4px);
+}
+
